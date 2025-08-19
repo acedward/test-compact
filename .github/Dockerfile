@@ -22,4 +22,4 @@ RUN compact --version
 RUN ls -l ~/.compact/bin
 COPY ./counter.compact .
 
-CMD compact compile counter.compact out
+CMD compact compile counter.compact out && ls -l out
